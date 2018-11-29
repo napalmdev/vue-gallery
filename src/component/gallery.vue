@@ -23,13 +23,18 @@
 
 <script>
   import 'blueimp-gallery/css/blueimp-gallery.min.css';
+  import 'blueimp-gallery/js/blueimp-helper.js';
   import 'blueimp-gallery/js/blueimp-gallery-fullscreen.js';
+  import 'blueimp-gallery/js/blueimp-gallery-indicator.js';
   import 'blueimp-gallery/js/blueimp-gallery-video.js';
-  import 'blueimp-gallery/js/blueimp-gallery-youtube.js';
   import 'blueimp-gallery/js/blueimp-gallery-vimeo.js';
+  import 'blueimp-gallery/js/blueimp-gallery-youtube.js';
   import blueimp from 'blueimp-gallery/js/blueimp-gallery.js';
 
   export default {
+    created() {
+      console.log('iniciou vue-gallery');
+    },
     props: {
       images: {
         type: Array,
